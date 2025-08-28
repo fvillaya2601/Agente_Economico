@@ -13,7 +13,7 @@ if not api_key:
     st.warning("⚠️ No se encontró la clave de API de Groq. Configura GROQ_API_KEY en tu entorno.")
 
 # Inicializar modelo
-llm = ChatGroq(model="mixtral-8x7b-32768", api_key=api_key)
+llm = ChatGroq(model="llama-3.1-8b-instant", api_key=api_key)
 
 # Prompt template
 template = ChatPromptTemplate.from_messages([
