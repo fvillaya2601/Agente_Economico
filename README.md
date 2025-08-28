@@ -1,6 +1,6 @@
-# 📊 Agente LLM de Economía
+# 📊 Agente de Economía
 
-Este proyecto implementa un **Agente LLM especializado en economía** utilizando **LangChain** y **Groq**, desplegado en una aplicación web con **Streamlit**.
+Este proyecto implementa un **Agente LLM especializado en economía** utilizando **LangChain** y **Groq**, desplegado en **Streamlit**.
 
 ## 🚀 Funcionalidades
 - Explicación de conceptos económicos y financieros.
@@ -14,11 +14,10 @@ Este proyecto implementa un **Agente LLM especializado en economía** utilizando
 
 ## 📦 Instalación y uso
 ```bash
-# Clonar el repositorio
 git clone https://github.com/tu_usuario/econ-llm-agent.git
 cd econ-llm-agent
 
-# Crear entorno virtual (opcional)
+# Crear entorno virtual
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate   # Windows
