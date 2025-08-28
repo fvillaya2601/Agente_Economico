@@ -28,7 +28,7 @@ if st.button("Analizar"):
     if question.strip():
         chain = template | llm
         response = chain.invoke({"question": question})
-        st.subheader("💡 Respuesta del agente:")
+        st.subheader("💡 Respuesta:")
         st.write(response.content)
     else:
         st.warning("Por favor escribe una consulta.")
