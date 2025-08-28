@@ -5,7 +5,7 @@ import os
 
 # Configuración
 st.set_page_config(page_title="Agente Económico", page_icon="📈", layout="wide")
-st.title("📊 Agente LLM de Economía")
+st.title("📊 Chat de Economía")
 
 # API key
 api_key = os.getenv("GROQ_API_KEY")
@@ -22,7 +22,7 @@ template = ChatPromptTemplate.from_messages([
 ])
 
 # Entrada del usuario
-question = st.text_area("Escribe tu consulta económica:", placeholder="Ejemplo: Explica la inflación en términos simples.")
+question = st.text_area("Escribe tu consulta sobre economía:", placeholder="Ejemplo: Que es el PIB.")
 
 if st.button("Analizar"):
     if question.strip():
