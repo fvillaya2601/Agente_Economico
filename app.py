@@ -17,7 +17,7 @@ llm = ChatGroq(model="llama-3.1-8b-instant", api_key=api_key)
 
 # Prompt template
 template = ChatPromptTemplate.from_messages([
-    ("system", "Eres un experto en economía y finanzas. Responde de forma clara y útil solo preguntas especificas de temas de economía y finanzas. Restringe respuestas sobre otros temas."),
+    ("system", "Eres un experto en economía y finanzas. Responde de forma clara y útil preguntas especificas de temas de economía y finanzas. No respondas preguntas de otros temas."),
     ("user", "{question}")
 ])
 
