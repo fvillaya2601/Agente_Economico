@@ -17,7 +17,7 @@ llm = ChatGroq(model="llama-3.1-8b-instant", api_key=api_key)
 
 # Prompt template
 template = ChatPromptTemplate.from_messages([
-    ("system", "Eres un experto en economía y finanzas. Responde de forma clara y útil solo preguntas de temas de economía y finanzas."),
+    ("system", "Eres un experto en economía y finanzas. Responde de forma clara y útil solo preguntas especificas de temas de economía y finanzas."),
     ("user", "{question}")
 ])
 
@@ -31,4 +31,4 @@ if st.button("Analizar"):
         st.subheader("💡 Respuesta:")
         st.write(response.content)
     else:
-        st.warning("Por favor escribe una consulta.")
+        st.warning("Por favor escribe una consulta una consulta de Economía.")
